@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-asc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "description": "Vite plugin for AssemblyScript Compiler (asc)",
   "author": "zmx0142857",
@@ -12,7 +12,7 @@
   },
   "bugs": "https://github.com/zmx0142857/vite-plugin-asc/issues",
   "keywords": ["vite-plugin", "assemblyscript"],
-  "files": ["."],
+  "files": ["index.js", "index.d.ts", "README.md", "LICENSE"],
   "main": "index.js",
   "module": "index.js",
   "types": "index.d.ts",

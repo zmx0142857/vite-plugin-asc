@@ -1,6 +1,6 @@
 # vite-plugin-asc
 
-Vite plugin for AssemblyScript Compiler (asc)
+Vite plugin for [AssemblyScript](https://www.assemblyscript.org/getting-started.html) Compiler (asc)
 
 ## quick start
 
