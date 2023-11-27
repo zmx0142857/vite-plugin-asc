@@ -1,0 +1,22 @@
+{
+  "name": "vite-plugin-asc",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Vite plugin for AssemblyScript Compiler (asc)",
+  "author": "zmx0142857",
+  "license": "MIT",
+  "homepage": "https://github.com/zmx0142857/vite-plugin-asc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmx0142857/vite-plugin-asc.git"
+  },
+  "bugs": "https://github.com/zmx0142857/vite-plugin-asc/issues",
+  "keywords": ["vite-plugin", "assemblyscript"],
+  "files": ["."],
+  "main": "index.js",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
