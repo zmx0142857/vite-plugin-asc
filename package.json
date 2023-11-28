@@ -16,6 +16,8 @@
   "main": "index.js",
   "module": "index.js",
   "types": "index.d.ts",
+  "engines": { "node": ">=18.0.0" },
+  "engineStrict": true,
   "scripts": {},
   "dependencies": {},
   "devDependencies": {}

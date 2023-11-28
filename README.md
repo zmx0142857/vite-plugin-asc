@@ -4,6 +4,8 @@ Vite plugin for [AssemblyScript](https://www.assemblyscript.org/getting-started.
 
 ## quick start
 
+
+    $ node -v # nodejs >= 18 is required if you're using latest version of assemblyscript
     $ pnpm i -D vite assemblyscript vite-plugin-asc
 
 ```text

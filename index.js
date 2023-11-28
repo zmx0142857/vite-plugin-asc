@@ -69,6 +69,17 @@ export default function vitePluginAsc (options = {}) {
     return fs.promises.writeFile(absolutes.configFile, JSON.stringify(config, undefined, 2))
   }
 
+  const handleError = (err) => {
+    if (err.message === "Unexpected token '{'") {
+      const v = Number(process.version.slice(1).split('.')[0])
+      if (!(v >= 18))
+        throw new Error('node.js >= 18 is required')
+    } else if (err.message.indexOf('Cannot find module') > -1) {
+      throw new Error('assemblyscript compiler is not found, you may try:\n\n  npm i -D assemblyscript\n\n')
+    }
+    throw err
+  }
+
   return {
     name,
     config: () => ({
@@ -88,7 +99,7 @@ export default function vitePluginAsc (options = {}) {
       try {
         asc = await import(absolutes.asc)
       } catch (err) {
-        throw new Error('assemblyscript compiler is not found, you may try:\n\n  npm i -D assemblyscript\n\n')
+        handleError(err)
       }
       const { error } = await asc.main([options.entry, '--target', options.target], {
         stdout: process.stdout,
